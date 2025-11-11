@@ -1,0 +1,61 @@
+.wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    text-align: center;
+}
+.wrapper > *{
+    padding: 10px;
+    margin: 10px;
+    flex: 1 100%;
+    border-radius: 10px;
+
+}
+.header{
+    background: rgb(213, 247, 172);
+    height: 50px;
+
+}
+.nav {
+    text-align: left;
+    background: green;
+    height: 350px;
+}
+.footer {
+    background: rgb(213, 247, 172);
+    height: 80px;
+}
+.aside1{
+    background: whitesmoke;
+    text-align: left;
+}
+
+.aside2{
+    background: whitesmoke;
+    text-align: left;
+
+}
+@media all and (min-width: 800px)
+{
+    .nav{
+        flex: 3;
+    }
+    .aside1{
+        order: 1;
+    }
+    .aside2{
+        order: 3;
+    }
+    .nav{
+        order: 2;
+    }
+    .footer{
+        order: 4;
+    }
+}
+
+@media all and (min-width: 600px)
+{
+    .aside {
+        flex: 1;
+    }
+}
